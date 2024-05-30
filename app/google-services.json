@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "792834185933",
+    "project_id": "projeto-talentexchange",
+    "storage_bucket": "projeto-talentexchange.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:792834185933:android:a303117f49f64494fe6784",
+        "android_client_info": {
+          "package_name": "com.example.talent"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDe9l2VQQBVyTzKwRrOgFRWC9kup-hgSSA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

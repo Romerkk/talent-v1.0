@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="roxo">#4C5270</color>
+    <color name="white">#FFFFFF</color>
+    <color name="roxobb">#4C5270</color>
+    <color name="roxoclaro">#4A5E78</color>
+    <color name="azul">#467C8D</color>
+    <color name="azulclaro">#429AA3</color>
+    <color name="azulbb">#3EB1B4</color>
+    <color name="azulbbb">#37D6CF</color>
+    <color name="preto">#000000</color>
+    <color name="azul2">#2C70CA</color>
+    <color name="azul3">#35EFE0</color>
+    <color name="rosa">#E1DF09D4</color>
+
+</resources>

@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Talent</string>
+    <string name="CONECTESE">CONECTE-SE</string>
+    <string name="text_cadastro">Não tem uma conta? INSCREVER-SE</string>
+    <string name="esqueceu_sua_senha">Esqueceu sua senha?</string>
+    <string name="senha">Senha</string>
+    <string name="talentexchange">TalentExchange</string>
+    <string name="numero_de_telefone_ou_email">Numero de telefone ou Email</string>
+    <string name="TalentExchange">Talent</string>
+    <string name="Inscrever">INSCREVER-SE</string>
+    <string name="title_activity_tela_principal">TelaPrincipal</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
