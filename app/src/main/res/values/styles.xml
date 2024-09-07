@@ -6,7 +6,7 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:background">@drawable/edit_text</item>
         <item name="android:padding">20dp</item>
-        <item name="android:maxLength">30</item>
+        <item name="android:maxLength">300</item>
         <item name="android:layout_marginLeft">40dp</item>
         <item name="android:layout_marginRight">40dp</item>
         <item name="android:layout_marginTop">15dp</item>
@@ -78,7 +78,7 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:background">@drawable/pesquisar</item>
         <item name="android:padding">20dp</item>
-        <item name="android:maxLength">30</item>
+        <item name="android:maxLength">300</item>
         <item name="android:layout_marginLeft">40dp</item>
         <item name="android:layout_marginRight">40dp</item>
         <item name="android:layout_marginTop">15dp</item>
@@ -91,7 +91,7 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:background">@color/rosa</item>
         <item name="android:padding">20dp</item>
-        <item name="android:maxLength">30</item>
+        <item name="android:maxLength">300</item>
         <item name="android:layout_marginLeft">40dp</item>
         <item name="android:layout_marginRight">40dp</item>
         <item name="android:layout_marginTop">15dp</item>
@@ -114,7 +114,7 @@
     <item name="android:layout_height">wrap_content</item>
     <item name="android:background">@drawable/edit_conectar</item>
     <item name="android:padding">50dp</item>
-    <item name="android:maxLength">30</item>
+    <item name="android:maxLength">300</item>
     <item name="android:layout_marginLeft">40dp</item>
     <item name="android:layout_marginRight">120dp</item>
     <item name="android:layout_marginTop">15dp</item>
@@ -125,13 +125,18 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:background">@drawable/edit_conectar</item>
         <item name="android:padding">50dp</item>
-        <item name="android:maxLength">30</item>
+        <item name="android:maxLength">300</item>
         <item name="android:layout_marginLeft">40dp</item>
         <item name="android:layout_marginRight">120dp</item>
         <item name="android:layout_marginTop">15dp</item>
     </style>
 
+    <style name="roundedImageViewRounded">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
 
+
+    </style>
 
 
 

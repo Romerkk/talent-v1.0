@@ -1,10 +1,6 @@
 package com.example.talent;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
-import android.graphics.Color;
 import android.os.Bundle;
 import android.os.Handler;
 import android.text.TextUtils;
@@ -14,13 +10,13 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
-import com.google.android.material.snackbar.Snackbar;
-import com.google.firebase.Firebase;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.FirebaseUser;
 
 public class formLogin extends AppCompatActivity {
 
@@ -32,7 +28,7 @@ public class formLogin extends AppCompatActivity {
 
 
     String[] mensagens = {"preecha todos dos campos","Login efetuado com sucesso"};
-    private Intent formLogin;
+    private Intent FormLogin;
 
     public formLogin() {
     }
@@ -53,7 +49,6 @@ public class formLogin extends AppCompatActivity {
 
                 Intent intent= new Intent(formLogin.this,FormCadastro.class);
                 startActivity(intent);
-
 
 
             }
@@ -131,6 +126,7 @@ public class formLogin extends AppCompatActivity {
         edit_senha = findViewById(R.id.edit_senha);
         bt_conectar = findViewById(R.id.bt_conectar);
         text_tela_reset = findViewById(R.id.text_tela_reset);
+
 
 
 

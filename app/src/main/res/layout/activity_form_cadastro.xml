@@ -21,6 +21,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+
     <EditText
         android:id="@+id/edit_email"
         style="@style/Edit_Text"
@@ -30,15 +31,16 @@
         android:textColorHint="#0066FF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.512"
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
-        android:id="@+id/nome_completo"
+        android:id="@+id/edit_habilidades"
         style="@style/Edit_Text"
-        android:layout_marginBottom="440dp"
-        android:hint="Nome completo"
-        android:textColorHint="#0066FF"
+        android:layout_marginBottom="300dp"
+        android:hint="Habilidades"
         android:inputType="text"
+        android:textColorHint="#0066FF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -46,19 +48,29 @@
     <EditText
         android:id="@+id/edit_nome_usuario"
         style="@style/Edit_Text"
-        android:layout_marginBottom="360dp"
-        android:hint="nome de usuario"
-        android:textColorHint="#0066FF"
+        android:layout_marginBottom="444dp"
+        android:hint="Nome completo"
         android:inputType="text"
+        android:textColorHint="#0066FF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.625"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/edit_experiencia"
+        style="@style/Edit_Text"
+        android:layout_marginBottom="372dp"
+        android:hint="Experiencia"
+        android:inputType="text"
+        android:textColorHint="#0066FF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
         android:id="@+id/edit_senha"
         style="@style/Edit_Text"
-        android:layout_marginBottom="276dp"
+        android:layout_marginBottom="230dp"
         android:hint="Senha"
         android:textColorHint="#0066FF"
         android:inputType="numberPassword"
@@ -79,6 +91,23 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints,VisualLintButtonSize"
+        tools:visibility="gone" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/edit_voltar"
+        style="@style/Edit_EsqueceSenha"
+        android:layout_width="330dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="84dp"
+        android:text="VOLTAR"
+        android:textColor="@color/rosa"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.629"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints,VisualLintButtonSize"
         tools:visibility="gone" />

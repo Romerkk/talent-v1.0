@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background2"
+    tools:context=".FormCadastro">
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/talentexchange"
+        android:textColor="@color/white"
+        android:textSize="50sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edit_email"
+        style="@style/Edit_Text"
+        android:layout_marginBottom="456dp"
+        android:hint="E-mail ou numero de telefone"
+        android:inputType="textEmailAddress"
+        android:textColorHint="#0066FF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/edit_nome_usuario"
+        style="@style/Edit_Text"
+        android:layout_marginBottom="384dp"
+        android:hint="Nome completo"
+        android:inputType="text"
+        android:textColorHint="#0066FF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/edit_senha"
+        style="@style/Edit_Text"
+        android:layout_marginBottom="168dp"
+        android:hint="Senha"
+        android:inputType="numberPassword"
+        android:textColorHint="#0066FF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/edit_voltar"
+        style="@style/Edit_EsqueceSenha"
+        android:layout_width="330dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="20dp"
+        android:text="VOLTAR"
+        android:textColor="@color/rosa"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints,VisualLintButtonSize"
+        tools:visibility="gone" />
+
+    <EditText
+        android:id="@+id/edit_experiencia"
+        style="@style/Edit_Text"
+        android:layout_marginBottom="312dp"
+        android:hint="Experiencia"
+        android:inputType="text"
+        android:textColorHint="#0066FF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/edit_Inscrever"
+        style="@style/Edit_Inscrever"
+        android:layout_width="330dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="100dp"
+        android:text="@string/Inscrever"
+        android:textColor="@color/roxo"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints,VisualLintButtonSize"
+        tools:visibility="gone" />
+
+    <EditText
+        android:id="@+id/edit_habilidades"
+        style="@style/Edit_Text"
+        android:layout_marginBottom="240dp"
+        android:hint="Habilidades"
+        android:inputType="text"
+        android:textColorHint="#0066FF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

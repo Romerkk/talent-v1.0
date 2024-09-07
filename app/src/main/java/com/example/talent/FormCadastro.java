@@ -1,9 +1,7 @@
 package com.example.talent;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.util.Log;
@@ -12,12 +10,14 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
 import com.google.android.material.snackbar.Snackbar;
-import com.google.firebase.Firebase;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseAuthInvalidCredentialsException;
@@ -26,15 +26,17 @@ import com.google.firebase.auth.FirebaseAuthWeakPasswordException;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.FirebaseFirestore;
 
-import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
 
 public class FormCadastro extends AppCompatActivity {
 
     private TextView text_tela_cadastro;
-    private EditText edit_nome_completo,edit_email,edit_senha;
+    private EditText edit_nome_completo,edit_email,edit_senha,edit_experiencias,edit_habilidades;
     private Button bt_Inscrever;
+
+    private Button edit_voltar;
+
     String[] mensagens = {"preecha todos dos campos","Cadastro realizado com sucesso"};
     String usuarioID;
 
@@ -47,6 +49,23 @@ public class FormCadastro extends AppCompatActivity {
 
         IniciarComponentes();
 
+
+        edit_voltar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(FormCadastro.this,formLogin.class);
+                startActivity(intent);
+
+
+
+
+
+
+
+            }
+        });
+
+
         bt_Inscrever.setOnClickListener(new View.OnClickListener() {
             @SuppressLint("ResourceAsColor")
             @Override
@@ -55,6 +74,8 @@ public class FormCadastro extends AppCompatActivity {
                 String nome = edit_nome_completo.getText().toString();
                 String email = edit_email.getText().toString();
                 String senha = edit_senha.getText().toString();
+                String experiencia = edit_experiencias.getText().toString();
+                String habilidades = edit_habilidades.getText().toString();
 
                 if (nome.isEmpty()  || email.isEmpty() || senha.isEmpty()) {
                     Snackbar snackbar = Snackbar.make(v,mensagens[0],Snackbar.LENGTH_SHORT);
@@ -71,8 +92,14 @@ public class FormCadastro extends AppCompatActivity {
 
 
 
+
+
             }
+
+
         });
+
+
     }
                 private void CadastrarUsuario(View v){
                     String email = edit_email.getText().toString();
@@ -119,19 +146,24 @@ public class FormCadastro extends AppCompatActivity {
                     });
 
 
+
+
     }
 
 
     private void  SalvarDadosUsuario(){
         String nome = edit_nome_completo.getText().toString();
+        String habilidade = edit_habilidades.getText().toString();
+        String experiencias = edit_experiencias.getText().toString();
+
 
         FirebaseFirestore db =FirebaseFirestore.getInstance();
-
         Map<String,Object> usuarios = new HashMap<>();
         usuarios.put("nome",nome);
+        usuarios.put("habilidade",habilidade);
+        usuarios.put("experiencia",experiencias);
 
         usuarioID = FirebaseAuth.getInstance().getCurrentUser().getUid();
-
         DocumentReference documentReference = db.collection( "Usuarios").document(usuarioID);
         documentReference.set(usuarios).addOnSuccessListener(new OnSuccessListener<Void>() {
             @Override
@@ -139,7 +171,9 @@ public class FormCadastro extends AppCompatActivity {
                 Log.d("db",  "Sucesso ao salvar os dados");
 
 
+
             }
+
         })
                 .addOnFailureListener(new OnFailureListener() {
                     @Override
@@ -148,7 +182,14 @@ public class FormCadastro extends AppCompatActivity {
 
                     }
                 });
+
+
     }
+
+
+
+
+
 
     private void IniciarComponentes(){
 
@@ -156,6 +197,8 @@ public class FormCadastro extends AppCompatActivity {
         edit_email = findViewById(R.id.edit_email);
         edit_senha =findViewById(R.id.edit_senha);
         bt_Inscrever = findViewById(R.id.edit_Inscrever);
-
+        edit_experiencias = findViewById(R.id.edit_experiencia);
+        edit_habilidades = findViewById(R.id.edit_habilidades);
+        edit_voltar = findViewById(R.id.edit_voltar);
         }
     }
